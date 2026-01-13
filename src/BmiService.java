@@ -2,9 +2,7 @@
 
 public class BmiService {
 
-    public double calculate(double kilograms, double meters)
-
-    {
+    public double calculate(double kilograms, double meters) {
 
         boolean integerA = kilograms == (int) kilograms;
         int indexA = (int) (integerA ? kilograms : Math.round(kilograms));
@@ -14,8 +12,6 @@ public class BmiService {
 
         double bmi = kilograms / (meters * meters);
         return bmi;
-
-
 
 
         //int bmi = integer ? a && b : Math.round
