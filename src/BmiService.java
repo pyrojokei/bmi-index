@@ -1,10 +1,10 @@
 public class BmiService {
 
-    public double calculate(double kilograms, double meters) {
+    public int calculate(double kilograms, double meters) {
 
         double bmiIndex;
-        double bmi = (double) kilograms / (meters * meters);
+        double bmi = kilograms / (meters * meters);
         bmiIndex = (int) bmi;
-        return bmiIndex;
+        return (int) bmiIndex;
     }
 }
